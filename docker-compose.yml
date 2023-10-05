@@ -3,7 +3,7 @@ version: '3.7'
 services:
   cloudflared:
     image: cloudflare/cloudflared:latest
-    command: tunnel --no-autoupdate run --token ${CLOUDFLARED_TOKEN}
+    command: tunnel --no-autoupdate run -f --protocol quic --token ${CLOUDFLARED_TOKEN}
     volumes:
       - /etc/localtime:/etc/localtime:ro
     networks:
