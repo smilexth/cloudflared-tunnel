@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   cloudflared:
+    container_name: cloudflared-tunnel
     image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate run --protocol quic --token ${CLOUDFLARED_TOKEN}
     volumes:
