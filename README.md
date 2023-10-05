@@ -29,12 +29,12 @@ networks:
 
 ## Parameters
 
-```container_name```: Specifies the name of the container.
-```image```: The Docker image used to create the container.
-```command```: The command executed when the container starts.
-```volumes```: Binds the host's timezone data to the container.
-```networks```: Specifies the network that the container connects to.
-```restart```: Determines the restart policy.
+- ```container_name```: Specifies the name of the container.
+- ```image```: The Docker image used to create the container.
+- ```command```: The command executed when the container starts.
+- ```volumes```: Binds the host's timezone data to the container.
+- ```networks```: Specifies the network that the container connects to.
+- ```restart```: Determines the restart policy.
 
 ## How to Use
 
